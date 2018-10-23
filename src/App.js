@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Controller from "./components/Controller";
 import { Col, Row, Container } from "./components/Template";
-import { Jumbotron, Title, Score } from "./components/Header";
+import { Jumbotron, Header, Userscore } from "./components/Header";
 import character from "./character.json";
 
 function shuffle(array) {
@@ -67,37 +67,37 @@ class App extends Component {
         <Row>
           <Col size="12">
             <Jumbotron>
-              <Title>
+              <Header>
                 <h1>
                   Plus Ultra!
               </h1>
-              </Title>
+              </Header>
             </Jumbotron>
           </Col>
         </Row>
         <Row>
           <Col size="6">
-            <Score>
+            <Userscore>
               <h2>
                 Score: {this.state.currentScore}
               </h2>
-            </Score>
+            </Userscore>
           </Col>
           <Col size="6">
-            <Score>
+            <Userscore>
               <h2 className="text-right">
                 Top Score: {this.state.topScore}
               </h2>
-            </Score>
+            </Userscore>
           </Col>
         </Row>
         <Row>
           <Col size="12">
-            <Score>
+            <Userscore>
               <h3 className="text-center">
                 {this.state.message}
               </h3>
-            </Score>
+            </Userscore>
           </Col>
         </Row>
         <Row>

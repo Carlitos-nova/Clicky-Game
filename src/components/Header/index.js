@@ -1,3 +1,3 @@
 export * from "./Jumbotron";
-export * from "./Title";
-export * from "./Score";
+export * from "./Header";
+export * from "./Userscore";

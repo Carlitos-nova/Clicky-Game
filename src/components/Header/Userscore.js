@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Score = ({ children }) => (
+export const Userscore = ({ children }) => (
     <div className="font-weight-bold " >
         {children}
     </div>
